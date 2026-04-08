@@ -2,7 +2,7 @@ const Database = require('better-sqlite3');
 const path = require('path');
 const fs = require('fs');
 
-const dbPath = path.join(process.env.HOME || process.env.USERPROFILE || '.', '.budget-cli', 'budget.db');
+const dbPath = process.env.BUDGET_DB_PATH || path.join(process.env.HOME || process.env.USERPROFILE || '.', '.budget-cli', 'budget.db');
 const dbDir = path.dirname(dbPath);
 
 if (!fs.existsSync(dbDir)) {
