@@ -1,0 +1,29 @@
+{
+  "name": "budget-cli",
+  "version": "1.0.0",
+  "description": "A lightweight personal finance tracker CLI",
+  "main": "src/index.js",
+  "bin": {
+    "budget": "./bin/budget.js"
+  },
+  "scripts": {
+    "test": "node --test test/**/*.test.js",
+    "start": "node bin/budget.js"
+  },
+  "keywords": [
+    "budget",
+    "finance",
+    "cli",
+    "sqlite"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite3": "^9.0.0",
+    "chalk": "^4.1.2",
+    "commander": "^12.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
