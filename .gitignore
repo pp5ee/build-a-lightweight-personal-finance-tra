@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+
+# IDE/Editor
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+
+# Local humanize state
+.humanize/
